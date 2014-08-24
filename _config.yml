@@ -25,3 +25,8 @@ gems:
     - jekyll-sitemap
     - jekyll-mentions
     - jemoji
+
+# Pages
+pages_list:
+  Projects:       projects
+  Archive:        archive
