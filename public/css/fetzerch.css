@@ -9,3 +9,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #313131;
   letter-spacing: -.025rem;
 }
+
+/* Head */
+.masthead a {
+  color: #000;
+}
+.masthead h3 {
+  font-weight: 600;
+}
+
+@media (min-width: 34em) {
+  .masthead {
+    padding-top: 1rem;
+    text-align: right;
+  }
+  .masthead-title {
+    float: left;
+  }
+}
