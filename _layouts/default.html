@@ -30,6 +30,13 @@
           <li><a href="{{ site.baseurl }}/atom.xml">
             <i class="fa fa-rss"></i></a></li>
         </ul>
+        <ul class="nav">
+          {% for page in site.pages_list %}
+          <li>
+            <a href="{{ site.baseurl }}/{{ page[1] }}/">{{ page[0] }}</a>
+          </li>
+          {% endfor %}
+        </ul>
       </header>
 
       <main>

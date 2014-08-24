@@ -34,12 +34,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Navigation */
-.contact {
+.contact, .nav{
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
   display: inline-block;
 }
-.contact li {
+.contact li, .nav li {
   display: inline-block;
+}
+.nav li {
+  margin-left: .5rem;
 }
