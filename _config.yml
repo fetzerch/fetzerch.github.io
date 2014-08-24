@@ -6,17 +6,22 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
-paginate:         1
+title:            Christian Fetzer
+tagline:
+url:              https://fetzerch.github.io
+paginate:         5
 baseurl:
 author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+  name:           Christian Fetzer
+  url:            https://fetzerch.github.io
+  email:          fetzer.ch@gmail.com
+  github:         fetzerch
 
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
+# Excludes
+exclude: [README.md, LICENSE.md, Gemfile*, Rakefile]
+
+# Gems
+gems:
+    - jekyll-sitemap
+    - jekyll-mentions
+    - jemoji
