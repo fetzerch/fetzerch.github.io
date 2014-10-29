@@ -46,3 +46,25 @@ h1, h2, h3, h4, h5, h6 {
 .nav li {
   margin-left: .5rem;
 }
+
+/* Code */
+code {
+  font-weight: bold;
+  color: inherit;
+}
+table code {
+  background-color: transparent;
+}
+
+/* Code: Horizontal scrolling */
+.highlight pre code * {
+  white-space: nowrap;
+}
+.highlight pre code {
+  white-space: pre;
+}
+.highlight pre {
+  word-break: normal;
+  word-wrap: normal;
+  overflow-x: auto;
+}
