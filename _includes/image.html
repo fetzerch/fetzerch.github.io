@@ -1,0 +1,7 @@
+{% for image in page.images %}
+{% if include.image == null or include.image == image.name %}
+<a href="{{ site.baseurl }}/assets/{{ image.name }}" data-lightbox="{{ page.title }}" title="{{ image.text }}">
+  <img src="{{ site.baseurl }}/assets/{% if image.thumb %}{{ image.thumb }}{% else %}{{ image.name }}{% endif %}" alt="{{ image.text }}">
+</a>
+{% endif %}
+{% endfor %}
