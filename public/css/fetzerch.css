@@ -47,6 +47,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: .5rem;
 }
 
+/* Meta */
+.post-date {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  color: #9a9a9a;
+}
+.post-date:before {
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+.post-date:before { content: "\f073" }
+
 /* Code */
 code {
   font-weight: bold;
