@@ -48,17 +48,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Meta */
-.post-date {
+.post-date,
+.post-comments {
   display: inline-block;
   margin-bottom: 1rem;
   padding-right: 10px;
   color: #9a9a9a;
 }
-.post-date:before {
+.post-date:before,
+.post-comments:before {
   font-family: FontAwesome;
   margin-right: 5px;
 }
 .post-date:before { content: "\f073" }
+.post-comments:before { content: "\f0E5" }
+.post-comments a { color: inherit; }
 
 /* Code */
 code {
