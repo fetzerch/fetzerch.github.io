@@ -6,6 +6,15 @@ title: Projects
 Here is a list of my open source projects created in the hope that they will be
 useful.
 
+## atMETEO
+
+atMETEO is a project for collecting and measuring weather related data from
+different sensors. The data is being collected by an ATmega based target and
+sent to a computer for further processing.
+
+* [Documentation](https://fetzerch.github.io/atMETEO)
+* [GitHub repository](https://github.com/fetzerch/atMETEO)
+
 ## fritzcollectd
 
 fritzcollectd is a plugin for [collectd](http://collectd.org/) to monitor AVM
