@@ -1,6 +1,10 @@
 ---
 layout: post
 title: fritzcollectd - A collectd plugin to monitor FRITZ!Box routers
+description: fritzcollectd is a plugin for collectd to monitor AVM FRITZ!Box
+             routers. Its implementation is based on the fritzcollection Python
+             module. The collected data can be visualized for instance with
+             Graphite and Grafana.
 comments_id: 3
 images:
   - name: fritzcollectd_grafana.png
