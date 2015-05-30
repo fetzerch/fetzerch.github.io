@@ -40,7 +40,7 @@ The Kodi/XBMC PVR plugin for MythTV (0.25 - 0.27) based on
 
 Note that the development of the plugin for MythTV 0.28+ is being continued by
 [janbar](https://github.com/janbar) as
-[pvr.mythtv](https://github.com/janbar/xbmc-pvr-addons).
+[pvr.mythtv](https://github.com/janbar/pvr.mythtv).
 
 # Open source contributions
 
