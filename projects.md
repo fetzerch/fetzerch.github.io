@@ -12,6 +12,7 @@ atMETEO is a project for collecting and measuring weather related data from
 different sensors. The data is being collected by an ATmega based target and
 sent to a computer for further processing.
 
+* [More information]({{ site.baseurl }}{% post_url 2015-05-20-atmeteo %})
 * [Documentation](https://fetzerch.github.io/atMETEO)
 * [GitHub repository](https://github.com/fetzerch/atMETEO)
 
