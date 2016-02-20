@@ -31,36 +31,39 @@ primitive music players that don't support the diversity of your collection.
 
 * [GitHub repository](https://github.com/fetzerch/sync_music)
 
-## pvr.mythtv.cmyth
-
-The Kodi/XBMC PVR plugin for MythTV (0.25 - 0.27) based on
-[libcmyth](https://github.com/cmyth/cmyth).
-
-* [Documentation](http://wiki.kodi.tv/index.php?title=MythTV_PVR)
-* [GitHub repository](https://github.com/fetzerch/xbmc-pvr-addons)
-
-Note that the development of the plugin for MythTV 0.28+ is being continued by
-[janbar](https://github.com/janbar) as
-[pvr.mythtv](https://github.com/janbar/pvr.mythtv).
-
 # Open source contributions
 
 In addition to the projects above, here is a collection of open source
 contributions worth mentioning.
 
-## Kodi/XBMC Media Center
+## Kodi Media Center
 
-[Kodi/XBMC](http://kodi.tv) is a popular open source media player application.
-I've contributed various bug fixes and smaller features mainly in the area of
-PVR.
+[Kodi](http://kodi.tv) (formerly known as XBMC) is a popular open source media
+player application. As long time Kodi user, I've contributed various bug fixes
+and smaller features mainly in the area of PVR. Since January 2016 I'm
+an official member of Team-Kodi and currently working on Kodi's CMake based
+build system.
 
-* Kodi/XBMC:
+* Kodi:
   [Pull Requests](https://github.com/xbmc/xbmc/pulls?q=author%3Afetzerch) /
   [Commits](https://github.com/xbmc/xbmc/commits?author=fetzerch)
 * PVR implementation before it has been merged into the official repository:
   [Pull Requests]
   (https://github.com/opdenkamp/xbmc/pulls?q=author%3Afetzerch) /
   [Commits](https://github.com/opdenkamp/xbmc/commits/master?author=fetzerch)
+
+### MythTV PVR addon (pvr.mythtv.cmyth)
+
+My involvement with Kodi (still called XBMC that time) started in 2012 with
+maintaining the first version of Kodi's MythTV PVR plugin. The plugin supported
+MythTV 0.25 - 0.27 and was based on [libcmyth](https://github.com/cmyth/cmyth).
+
+* [Documentation](http://wiki.kodi.tv/index.php?title=MythTV_PVR)
+* [GitHub repository](https://github.com/fetzerch/xbmc-pvr-addons)
+
+The development of the plugin for MythTV 0.28+ is being continued by
+[janbar](https://github.com/janbar) as
+[pvr.mythtv](https://github.com/janbar/pvr.mythtv).
 
 ## Jenkins Job Builder
 
