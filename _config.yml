@@ -1,8 +1,7 @@
-# Dependencies
-markdown:         redcarpet
-redcarpet:
-    extensions: [tables]
-highlighter:      pygments
+# Markdown
+kramdown:
+  input:          GFM
+  hard_wrap:      false
 
 # Permalinks
 permalink:        pretty
@@ -26,6 +25,7 @@ exclude: [README.md, LICENSE.md, Gemfile*, Rakefile]
 gems:
     - jekyll-sitemap
     - jekyll-mentions
+    - jekyll-paginate
     - jemoji
 
 # Pages

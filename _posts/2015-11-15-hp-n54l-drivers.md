@@ -37,7 +37,7 @@ interested to test it and use it on their systems.
 After installation of the updated driver and loading the modules, `sensors` is
 able to show the measurements:
 
-```console
+```text
 dg-i2c-1-2f
 Adapter: SMBus PIIX4 adapter SDA2 at 0b00
 Vcore:        +0.88 V  (min =  +0.50 V, max =  +1.40 V)
