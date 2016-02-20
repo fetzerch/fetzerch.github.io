@@ -74,13 +74,14 @@ table code {
 }
 
 /* Code: Horizontal scrolling */
-.highlight pre code * {
+.highlight code * {
   white-space: nowrap;
 }
-.highlight pre code {
+.highlight code {
   white-space: pre;
 }
-.highlight pre {
+.highlight {
+  background-color: #F9F9F9;
   word-break: normal;
   word-wrap: normal;
   overflow-x: auto;

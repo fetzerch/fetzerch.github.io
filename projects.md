@@ -48,8 +48,7 @@ build system.
   [Pull Requests](https://github.com/xbmc/xbmc/pulls?q=author%3Afetzerch) /
   [Commits](https://github.com/xbmc/xbmc/commits?author=fetzerch)
 * PVR implementation before it has been merged into the official repository:
-  [Pull Requests]
-  (https://github.com/opdenkamp/xbmc/pulls?q=author%3Afetzerch) /
+  [Pull Requests](https://github.com/opdenkamp/xbmc/pulls?q=author%3Afetzerch) /
   [Commits](https://github.com/opdenkamp/xbmc/commits/master?author=fetzerch)
 
 ### MythTV PVR addon (pvr.mythtv.cmyth)
@@ -72,6 +71,5 @@ that simplifies the configuration of Jenkins CI jobs. I've contributed the
 integration for the Valgrind and Clang scan-build publisher plugins that I'm
 using for some of the projects mentioned on this page.
 
-* Jenkins Job Builder: [Gerrit Changes]
-  (https://review.openstack.org/#/q/owner:%22Christian+Fetzer%22,n,z) /
+* Jenkins Job Builder: [Gerrit Changes](https://review.openstack.org/#/q/owner:%22Christian+Fetzer%22,n,z) /
   [Commits](https://github.com/openstack-infra/jenkins-job-builder/commits?author=fetzerch)
