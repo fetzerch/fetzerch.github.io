@@ -1,0 +1,105 @@
+# ----- fetzerch.github.io - Defaults -----------------------------------------
+
+- defaults:
+    name: global
+    project-type: freestyle
+    concurrent: true
+    properties:
+        - logrotate:
+            numToKeep: 10
+    wrappers:
+        - ansicolor
+        - timestamps
+
+
+# ----- Parameter -------------------------------------------------------------
+
+- parameter:
+    name: gitlab-parameters
+    parameters:
+        - string:
+            name: SourceBranch
+            default: master
+        - string:
+            name: TargetBranch
+            default: master
+
+
+# ----- Properties ------------------------------------------------------------
+
+- property:
+    name: gitlab-properties
+    properties:
+        - gitlab:
+            connection: https://10.0.1.12
+        - inject:
+            groovy-content: |
+                // overrides the value in "SourceBranch" when
+                // gitlabSourceBranch is set
+                if (binding.variables.containsKey('gitlabSourceBranch')) {
+                    return [SourceBranch: "$gitlabSourceBranch"]
+                }
+
+                // overrides the value in "TargetBranch" when
+                // gitlabTargetBranch is set
+                if (binding.variables.containsKey('gitlabTargetBranch')) {
+                    return [TargetBranch: "$gitlabTargetBranch"]
+                }
+
+
+# ----- SCM -------------------------------------------------------------------
+
+- scm:
+    name: scm-git
+    scm:
+        - git:
+            url: ssh://git@10.0.1.12/blog/fetzerch.github.io.git
+            basedir: sources
+            branches:
+                - origin/${SourceBranch}
+            merge:
+                branch: ${TargetBranch}
+            browser: gitlab
+            browser-url: https://10.0.1.12/blog/fetzerch.github.io
+
+
+# ----- Builder ---------------------------------------------------------------
+
+
+# ----- Publisher -------------------------------------------------------------
+
+
+# ----- Jobs ------------------------------------------------------------------
+
+- job:
+    name: fetzerch.github.io
+    parameters:
+        - gitlab-parameters
+    properties:
+        - gitlab-properties
+    scm:
+        - scm-git
+    triggers:
+        - gitlab:
+            add-ci-message: true
+    builders:
+        - shell: |
+            #!/bin/bash -eu
+
+            echo -e "\n----- markdownlint (mdl) -----\n"
+            mdl --style $WORKSPACE/sources/.mdl.rb \
+                $WORKSPACE/sources/**/*.md || true
+
+            echo -e "\n----- Rake Test -----\n"
+            cd $WORKSPACE/sources
+            rake test
+    publishers:
+        - warnings:
+            run-always: true
+            console-log-parsers:
+                - markdownlint
+                - spellchecker
+            total-thresholds:
+                unstable:
+                    total-all: 0
+        - gitlab-notifier
