@@ -29,7 +29,7 @@ Since a picture is worth a thousand words, this is how it looks:
 
 [collectd]: http://collectd.org
 [grafana]:  http://grafana.org
-[graphite]: http://graphite.wikidot.com
+[graphite]: https://graphiteapp.org
 [fritzconnection]: https://bitbucket.org/kbr/fritzconnection
 [fritzcollectd]: https://github.com/fetzerch/fritzcollectd
 
