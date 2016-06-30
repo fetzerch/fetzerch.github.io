@@ -19,7 +19,7 @@ author:
   github:         fetzerch
 
 # Excludes
-exclude: [README.md, LICENSE.md, Gemfile*, Rakefile]
+exclude: [README.md, LICENSE.md, Gemfile*, Rakefile, vendor]
 
 # Gems
 gems:
