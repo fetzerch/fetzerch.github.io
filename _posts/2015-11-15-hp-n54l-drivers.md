@@ -27,7 +27,8 @@ the driver but supported only an older kernel version. The patch was never
 merged into the mainline Linux kernel and meanwhile a few things have changed
 in that module. Since I think it's a valuable change, I ported it to the
 current kernel version, cleaned it up and re-sent it to the
-[mailing list][ml-i2c] where it's currently being reviewed.
+[mailing list][ml-i2c] where it's currently being reviewed. (*UPDATE*: The
+patch has been merged and is included in Linux 4.5.)
 
 For the time being, the patched driver can be found in this [GitHub
 repository][n54l-drivers] including a more detailed description and
@@ -58,7 +59,8 @@ The sensor readings can be easily aggregated with [collectd's][collectd]
 plugin has one minor limitation and tracks the sensor readings only by
 metric names (e.g "temp1") but not by the more descriptive labels
 (e.g. "CPU Temp"). To address this shortcoming I've created a
-[pull request on GitHub][collectd-pr].
+[pull request on GitHub][collectd-pr]. (*UPDATE*: The pull request has been
+accepted and the feature will be released with collectd 5.6.0.)
 
 The following [grafana] screenshot shows the result:
 
