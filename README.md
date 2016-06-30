@@ -10,7 +10,7 @@ Design based on [Poole](http://getpoole.com/) by
 Build and run the site locally at <http://localhost:4000/>:
 
 ```text
-bundle exec jekyll serve --watch --drafts -H 127.0.0.1
+rake serve
 ```
 
 ## Validate generated HTML output

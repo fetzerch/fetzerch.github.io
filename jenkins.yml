@@ -85,13 +85,8 @@
     builders:
         - shell: |
             #!/bin/bash -eu
-
-            echo -e "\n----- markdownlint (mdl) -----\n"
-            mdl --style $WORKSPACE/sources/.mdl.rb \
-                $WORKSPACE/sources/**/*.md || true
-
-            echo -e "\n----- Rake Test -----\n"
             cd $WORKSPACE/sources
+            rake verify
             rake test
     publishers:
         - warnings:
