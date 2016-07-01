@@ -1,3 +1,6 @@
+[![Circle CI
+Status](https://circleci.com/gh/fetzerch/fetzerch.github.io.svg?style=shield)](https://circleci.com/gh/fetzerch/fetzerch.github.io)
+
 # fetzerch.github.io
 
 This is my blog.
