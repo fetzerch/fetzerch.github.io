@@ -58,7 +58,8 @@ namespace :verify do
 end
 
 desc 'Verify source files'
-task verify: ['verify:jekyll', 'verify:ruby', 'verify:markdown']
+task verify: ['verify:jekyll', 'verify:ruby', 'verify:markdown',
+              'verify:spellcheck']
 
 # Check generated site
 namespace :test do
