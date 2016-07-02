@@ -48,6 +48,13 @@ namespace :verify do
     sh 'bundle exec mdl _posts *.md --style .mdl.rb'
     puts ''
   end
+
+  desc 'Spellcheck Markdown documents'
+  task :spellcheck do |t|
+    puts "----- #{t.comment} -----"
+    sh 'bundle exec mdspell _posts *.md --config .mdspell'
+    puts ''
+  end
 end
 
 desc 'Verify source files'
