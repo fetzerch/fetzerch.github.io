@@ -20,7 +20,7 @@ they can detect hardware problems in advance.
 These metrics are typically offered by hardware monitor chips and can
 be accessed in Linux with the *lm-sensors* utilities (`sensors-detect` and
 `sensors`). Unfortunately `sensors-detect` was not able to detect the
-respective chip (*Nuvotem/Windbond W83795ADG*). After a bit of research, it
+respective chip (*Nuvotem/Winbond W83795ADG*). After a bit of research, it
 turned out that the SMBus/I2C driver for the chipset failed to detect the
 sensor. Luckily there was already a [patch][n54l-patch] available that fixed
 the driver but supported only an older kernel version. The patch was never
