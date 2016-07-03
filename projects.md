@@ -24,6 +24,16 @@ FRITZ!Box routers.
 * [More information]({{ site.baseurl }}{% post_url 2014-08-23-fritzcollectd %})
 * [GitHub repository](https://github.com/fetzerch/fritzcollectd)
 
+## Sun and Moon Datasource Plugin for Grafana
+
+The Sun and Moon Datasource Plugin for Grafana calculates the position of Sun
+and Moon as well as the Moon illumination for visualization with
+[Grafana](http://grafana.org).
+
+* [More information]({{ site.baseurl }}{% post_url 2016-07-03-grafana-sunandmoon-datasource %})
+* [Grafana.net](https://grafana.net/plugins/fetzerch-sunandmoon-datasource)
+* [GitHub repository](https://github.com/fetzerch/grafana-sunandmoon-datasource)
+
 ## sync_music
 
 This program allows you to synchronize your music library for the usage on
