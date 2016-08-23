@@ -1,0 +1,21 @@
+image: ruby:2.1
+
+before_script:
+  - export LANG=C.UTF-8
+  - gem install bundler
+  - bundle install --jobs $(nproc) --path=/cache/bundler
+  # https://www.bountysource.com/issues/34482484-nested-bundle-exec-support-is-broken-on-latest-rubygems-bundler-combo
+  - sed -i -e "s/activate_bin_path/bin_path/g" $(which bundle)
+
+verify:
+  script:
+    - apt-get update && apt-get install -y aspell
+    - bundle exec rake verify
+
+test:
+  script:
+    - bundle exec rake test
+
+pages:
+  script:
+    - bundle exec rake build
