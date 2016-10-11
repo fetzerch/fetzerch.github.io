@@ -60,7 +60,7 @@ plugin has one minor limitation and tracks the sensor readings only by
 metric names (e.g "temp1") but not by the more descriptive labels
 (e.g. "CPU Temp"). To address this shortcoming I've created a
 [pull request on GitHub][collectd-pr]. (*UPDATE*: The pull request has been
-accepted and the feature will be released with collectd 5.6.0.)
+merged and the feature is included in collectd 5.6.0.)
 
 The following [grafana] screenshot shows the result:
 
