@@ -27,8 +27,11 @@ Since a picture is worth a thousand words, this is how it looks:
 
 {% include image.html image="fritzcollectd_grafana.png" %}
 
+This dashboard is accessible on [Grafana.net][grafana-db].
+
 [collectd]: http://collectd.org
 [grafana]:  http://grafana.org
+[grafana-db]: https://grafana.net/dashboards/713
 [graphite]: http://graphiteapp.org
 [fritzconnection]: https://bitbucket.org/kbr/fritzconnection
 [fritzcollectd]: https://github.com/fetzerch/fritzcollectd
