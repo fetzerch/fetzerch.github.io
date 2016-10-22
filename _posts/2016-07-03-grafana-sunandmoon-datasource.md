@@ -29,7 +29,8 @@ such as sunrise or sunset.
 
 Like all Grafana plugins the [*Sun and Moon Datasource Plugin*][grafana-ds] is
 now hosted on [Grafana.net][grafana-net] and the source code is available in a
-[GitHub repository][github-ds].
+[GitHub repository][github-ds]. An [example dashboard][grafana-db] can be found
+as well.
 
 ## Technical aspects
 
@@ -76,6 +77,7 @@ calculation of the mentioned values, please use the
 [grafana]: http://grafana.org
 [grafana3]: http://grafana.org/blog/2016/05/11/grafana-3-0-stable-released.html
 [grafana-ds]: https://grafana.net/plugins/fetzerch-sunandmoon-datasource
+[grafana-db]: https://grafana.net/dashboards/630
 [grafana-net]: https://grafana.net
 [graphite]: http://graphiteapp.org
 [monitorama]: http://monitorama.com
