@@ -53,4 +53,4 @@ parse the results with XPath.
 
 [collectd-exec]: https://collectd.org/wiki/index.php/Plugin:Exec
 [cURL-XML]: http://collectd.org/wiki/index.php/Plugin:cURL-XML/Config#Fritz.21Box_Internet_Router
-[fbstatus]: http://github.com/rullmann/scripts/tree/master/collectd/fritzbox-status
+[fbstatus]: https://erinnerungsfragmente.de/posts/2014/05/fritzbox-monitoring-mit-collectd
