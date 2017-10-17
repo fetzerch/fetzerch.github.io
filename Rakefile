@@ -63,11 +63,23 @@ task verify: ['verify:jekyll', 'verify:ruby', 'verify:markdown',
 
 # Check generated site
 namespace :test do
-  desc 'Verify generated HTML site'
+  desc 'Verify generated HTML site (without basedir)'
   task html: ['build'] do |t|
     puts "----- #{t.comment} -----"
     HTMLProofer.check_directory(
       './_site',
+      check_favicon: true, assume_extension: true, disable_external: true
+    ).run
+    puts ''
+  end
+
+  desc 'Verify generated HTML site (with basedir)'
+  task :html_basedir do |t|
+    puts "----- #{t.comment} -----"
+    sh 'bundle exec jekyll build --trace --drafts ' \
+       '--baseurl=/directory -d _site_basedir/directory'
+    HTMLProofer.check_directory(
+      './_site_basedir',
       check_favicon: true, assume_extension: true, disable_external: true
     ).run
     puts ''
@@ -85,7 +97,7 @@ namespace :test do
 end
 
 desc 'Test generated site'
-task test: ['test:html', 'test:rss']
+task test: ['test:html', 'test:rss', 'test:html_basedir']
 
 desc 'Verify external links'
 task external_links: ['build'] do |t|
