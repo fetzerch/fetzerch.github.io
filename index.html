@@ -7,13 +7,13 @@ title: Home
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
+      <a href="{{ post.url | relative_url }}">
         {{ post.title }}
       </a>
     </h1>
 
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_long_string }}</time>
-    <span class ="post-comments"><a href="{{ site.baseurl }}{{ post.url }}#comments">Comments</a></span>
+    <span class ="post-comments"><a href="{{ post.url | relative_url }}#comments">Comments</a></span>
 
     {{ post.content }}
   </article>
@@ -22,15 +22,15 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+    <a class="pagination-item older" href="{{ "/page" | relative_url }}{{ paginator.next_page }}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+      <a class="pagination-item newer" href="{{ "/" | relative_url }}">Newer</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+      <a class="pagination-item newer" href="{{ "/page" | relative_url }}page{{ paginator.previous_page }}">Newer</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Newer</span>
