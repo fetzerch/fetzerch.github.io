@@ -15,7 +15,3 @@ verify:
 test:
   script:
     - bundle exec rake test
-
-pages:
-  script:
-    - bundle exec rake build
