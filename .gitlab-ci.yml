@@ -16,6 +16,8 @@ test:
   script:
     - bundle exec rake test
 
-pages:
+external_links:
+  only:
+    - schedules
   script:
-    - bundle exec rake build
+    - bundle exec rake external_links
