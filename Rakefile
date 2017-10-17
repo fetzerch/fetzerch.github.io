@@ -7,11 +7,11 @@ Rake::TaskManager.record_task_metadata = true
 
 task default: 'serve'
 
-# Built site
+# Build site
 desc 'Build site'
 task :build do |t|
   puts "----- #{t.comment} -----"
-  sh 'bundle exec jekyll build'
+  sh 'bundle exec jekyll build --trace --drafts'
   puts ''
 end
 
@@ -66,8 +66,10 @@ namespace :test do
   desc 'Verify generated HTML site'
   task html: ['build'] do |t|
     puts "----- #{t.comment} -----"
-    sh 'bundle exec jekyll build --trace --drafts'
-    HTMLProofer.check_directory('./_site', check_favicon: true).run
+    HTMLProofer.check_directory(
+      './_site',
+      check_favicon: true, assume_extension: true
+    ).run
     puts ''
   end
 
