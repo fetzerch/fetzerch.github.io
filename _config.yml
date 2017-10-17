@@ -21,8 +21,8 @@ author:
 # Excludes
 exclude: [README.md, LICENSE.md, Gemfile*, Rakefile, vendor]
 
-# Gems
-gems:
+# Plugins
+plugins:
     - jekyll-sitemap
     - jekyll-mentions
     - jekyll-paginate
