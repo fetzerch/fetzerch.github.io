@@ -68,7 +68,7 @@ namespace :test do
     puts "----- #{t.comment} -----"
     HTMLProofer.check_directory(
       './_site',
-      check_favicon: true, assume_extension: true
+      check_favicon: true, assume_extension: true, disable_external: true
     ).run
     puts ''
   end
@@ -86,3 +86,10 @@ end
 
 desc 'Test generated site'
 task test: ['test:html', 'test:rss']
+
+desc 'Verify external links'
+task external_links: ['build'] do |t|
+  puts "----- #{t.comment} -----"
+  HTMLProofer.check_directory('./_site', external_only: true).run
+  puts ''
+end

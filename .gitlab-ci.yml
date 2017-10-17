@@ -15,3 +15,9 @@ verify:
 test:
   script:
     - bundle exec rake test
+
+external_links:
+  only:
+    - schedules
+  script:
+    - bundle exec rake external_links
