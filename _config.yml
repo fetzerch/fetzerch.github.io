@@ -11,6 +11,7 @@ title:            Christian Fetzer
 tagline:
 url:              https://fetzerch.github.io
 paginate:         5
+baseurl:
 author:
   name:           Christian Fetzer
   url:            https://fetzerch.github.io

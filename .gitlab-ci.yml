@@ -1,4 +1,6 @@
-image: ruby:2.1
+stages:
+  - test
+  - review
 
 before_script:
   - export LANG=C.UTF-8
@@ -8,16 +10,73 @@ before_script:
   - sed -i -e "s/activate_bin_path/bin_path/g" $(which bundle)
 
 verify:
+  stage: test
+  image: ruby:2.1
   script:
     - apt-get update && apt-get install -y aspell
     - bundle exec rake verify
 
 test:
+  stage: test
+  image: ruby:2.1
   script:
     - bundle exec rake test
 
 external_links:
+  stage: test
+  image: ruby:2.1
   only:
     - schedules
   script:
     - bundle exec rake external_links
+
+build:review:
+  stage: test
+  image: ruby:2.1
+  script:
+    - 'sed -i "s*baseurl:*baseurl: /gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG/public*" _config.yml'
+    - bundle exec rake build
+    - rm -r public/
+    - mv _site/ public/
+  artifacts:
+    paths:
+      - public
+  except:
+    - master
+
+review:
+  stage: review
+  dependencies:
+    - build:review
+  before_script: []
+  script:
+    - mkdir -p /var/www/html/gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG
+    - rsync -av --delete public /var/www/html/gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG
+  variables:
+    GIT_STRATEGY: none
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    url: http://10.0.1.10/gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG/public
+    on_stop: stop_review
+  only:
+    - branches
+  except:
+    - master
+  tags:
+    - webserver
+
+stop_review:
+  stage: review
+  before_script: []
+  script:
+    - rm -r public /var/www/html/gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG
+  variables:
+    GIT_STRATEGY: none
+  when: manual
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+    action: stop
+  except:
+    - master
+  tags:
+    - webserver
