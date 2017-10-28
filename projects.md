@@ -67,7 +67,7 @@ My involvement with Kodi (still called XBMC that time) started in 2012 with
 maintaining the first version of Kodi's MythTV PVR plugin. The plugin supported
 MythTV 0.25 - 0.27 and was based on [libcmyth](https://github.com/cmyth/cmyth).
 
-* [Documentation](http://wiki.kodi.tv/index.php?title=MythTV_PVR)
+* [Documentation](https://kodi.wiki/index.php?title=MythTV_PVR)
 * [GitHub repository](https://github.com/fetzerch/xbmc-pvr-addons)
 
 The development of the plugin for MythTV 0.28+ is being continued by
