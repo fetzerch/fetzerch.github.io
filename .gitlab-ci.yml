@@ -11,20 +11,20 @@ before_script:
 
 verify:
   stage: test
-  image: ruby:2.1
+  image: ruby:2.5
   script:
     - apt-get update && apt-get install -y aspell
     - bundle exec rake verify
 
 test:
   stage: test
-  image: ruby:2.1
+  image: ruby:2.5
   script:
     - bundle exec rake test
 
 external_links:
   stage: test
-  image: ruby:2.1
+  image: ruby:2.5
   only:
     - schedules
   script:
@@ -32,7 +32,7 @@ external_links:
 
 build:review:
   stage: test
-  image: ruby:2.1
+  image: ruby:2.5
   script:
     - 'sed -i "s*baseurl:*baseurl: /gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG/public*" _config.yml'
     - bundle exec rake build
