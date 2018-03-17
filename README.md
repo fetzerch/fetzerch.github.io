@@ -1,5 +1,4 @@
-[![Circle CI
-Status](https://circleci.com/gh/fetzerch/fetzerch.github.io.svg?style=shield)](https://circleci.com/gh/fetzerch/fetzerch.github.io)
+[![Build Status](https://travis-ci.org/fetzerch/fetzerch.github.io.svg?branch=master)](https://travis-ci.org/fetzerch/fetzerch.github.io)
 
 # fetzerch.github.io
 

@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.5
+addons:
+  apt:
+    packages:
+      - aspell-en
+script:
+  - bundle exec rake verify
+  - bundle exec rake test
