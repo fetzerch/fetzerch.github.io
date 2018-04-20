@@ -29,6 +29,7 @@ external_links:
     - schedules
   script:
     - bundle exec rake external_links
+  retry: 2
 
 build:review:
   stage: test
