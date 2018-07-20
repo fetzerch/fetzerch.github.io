@@ -4,10 +4,9 @@ stages:
 
 before_script:
   - export LANG=C.UTF-8
-  - gem install bundler
+  # https://github.com/bundler/bundler/issues/6629
+  - gem install bundler --version 1.16.2
   - bundle install --jobs $(nproc) --path=/cache/bundler
-  # https://www.bountysource.com/issues/34482484-nested-bundle-exec-support-is-broken-on-latest-rubygems-bundler-combo
-  - sed -i -e "s/activate_bin_path/bin_path/g" $(which bundle)
 
 verify:
   stage: test
