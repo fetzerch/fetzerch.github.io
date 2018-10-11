@@ -4,8 +4,7 @@ stages:
 
 before_script:
   - export LANG=C.UTF-8
-  # https://github.com/bundler/bundler/issues/6629
-  - gem install bundler --version 1.16.2
+  - gem install bundler
   - bundle install --jobs $(nproc) --path=/cache/bundler
 
 verify:
