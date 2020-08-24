@@ -33,7 +33,7 @@ This dashboard is accessible on [Grafana.net][grafana-db].
 [grafana]:  http://grafana.org
 [grafana-db]: https://grafana.net/dashboards/713
 [graphite]: http://graphiteapp.org
-[fritzconnection]: https://bitbucket.org/kbr/fritzconnection
+[fritzconnection]: https://github.com/kbr/fritzconnection
 [fritzcollectd]: https://github.com/fetzerch/fritzcollectd
 
 ## Alternatives
