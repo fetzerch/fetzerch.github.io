@@ -72,7 +72,7 @@ The drive temperatures were collected using the [HDDTemp][collectd-hddtemp] plug
 [collectd-pr]: https://github.com/collectd/collectd/pull/1239
 [collectd-hddtemp]: https://collectd.org/wiki/index.php/Plugin:HDDTemp
 [collectd-sensors]: https://collectd.org/wiki/index.php/Plugin:Sensors
-[grafana]:  http://grafana.org
+[grafana]:  https://grafana.com
 [ml-i2c]: http://vger.kernel.org/vger-lists.html#linux-i2c
 [n54l-drivers]: https://github.com/fetzerch/hp-n54l-drivers
 [n54l-patch]: https://www.mail-archive.com/linux-i2c@vger.kernel.org/msg06757.html

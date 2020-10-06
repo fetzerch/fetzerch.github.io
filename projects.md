@@ -18,7 +18,7 @@ sent to a computer for further processing.
 
 ## fritzcollectd
 
-fritzcollectd is a plugin for [collectd](http://collectd.org/) to monitor AVM
+fritzcollectd is a plugin for [collectd](https://collectd.org/) to monitor AVM
 FRITZ!Box routers.
 
 * [More information]({{ site.baseurl }}{% post_url 2014-08-23-fritzcollectd %})
@@ -28,10 +28,10 @@ FRITZ!Box routers.
 
 The Sun and Moon Datasource Plugin for Grafana calculates the position of Sun
 and Moon as well as the Moon illumination for visualization with
-[Grafana](http://grafana.org).
+[Grafana](https://grafana.com).
 
 * [More information]({{ site.baseurl }}{% post_url 2016-07-03-grafana-sunandmoon-datasource %})
-* [Grafana.net](https://grafana.net/plugins/fetzerch-sunandmoon-datasource)
+* [Grafana.net](https://grafana.com/grafana/plugins/fetzerch-sunandmoon-datasource)
 * [GitHub repository](https://github.com/fetzerch/grafana-sunandmoon-datasource)
 
 ## sync_music
@@ -48,7 +48,7 @@ contributions worth mentioning.
 
 ## Kodi Media Center
 
-[Kodi](http://kodi.tv) (formerly known as XBMC) is a popular open source media
+[Kodi](https://kodi.tv) (formerly known as XBMC) is a popular open source media
 player application. As long time Kodi user, I've contributed various bug fixes
 and smaller features mainly in the area of PVR. Since January 2016 I'm
 an official member of Team-Kodi and currently working on Kodi's CMake based
@@ -76,7 +76,7 @@ The development of the plugin for MythTV 0.28+ is being continued by
 
 ## Jenkins Job Builder
 
-[Jenkins Job Builder](http://ci.openstack.org/jenkins-job-builder) is a tool
+[Jenkins Job Builder](https://docs.openstack.org/infra/jenkins-job-builder) is a tool
 that simplifies the configuration of Jenkins CI jobs. I've contributed the
 integration for the Valgrind and Clang scan-build publisher plugins that I'm
 using for some of the projects mentioned on this page.

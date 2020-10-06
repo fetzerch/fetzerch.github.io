@@ -29,10 +29,10 @@ Since a picture is worth a thousand words, this is how it looks:
 
 This dashboard is accessible on [Grafana.net][grafana-db].
 
-[collectd]: http://collectd.org
-[grafana]:  http://grafana.org
-[grafana-db]: https://grafana.net/dashboards/713
-[graphite]: http://graphiteapp.org
+[collectd]: https://collectd.org
+[grafana]:  https://grafana.com
+[grafana-db]: https://grafana.com/grafana/dashboards/713
+[graphite]: https://graphiteapp.org
 [fritzconnection]: https://github.com/kbr/fritzconnection
 [fritzcollectd]: https://github.com/fetzerch/fritzcollectd
 
@@ -52,5 +52,5 @@ collectd's [cURL-XML] plugin to call the respective SOAP actions directly and
 parse the results with XPath.
 
 [collectd-exec]: https://collectd.org/wiki/index.php/Plugin:Exec
-[cURL-XML]: http://collectd.org/wiki/index.php/Plugin:cURL-XML/Config#Fritz.21Box_Internet_Router
+[cURL-XML]: https://collectd.org/wiki/index.php/Plugin:cURL-XML/Config#Fritz.21Box_Internet_Router
 [fbstatus]: https://erinnerungsfragmente.de/posts/2014/05/fritzbox-monitoring-mit-collectd
