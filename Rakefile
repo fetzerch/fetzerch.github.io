@@ -102,6 +102,6 @@ task test: ['test:html', 'test:rss', 'test:html_basedir']
 desc 'Verify external links'
 task external_links: ['build'] do |t|
   puts "----- #{t.comment} -----"
-  HTMLProofer.check_directory('./_site', external_only: true).run
+  HTMLProofer.check_directory('./_site', external_only: true, typhoeus: { timeout: 20 }).run
   puts ''
 end
