@@ -74,13 +74,13 @@ calculation of the mentioned values, please use the
 [atmeteo]: {{ site.baseurl }}{% post_url 2015-05-20-atmeteo %}
 [github-ds]: https://github.com/fetzerch/grafana-sunandmoon-datasource
 [github-i]: https://github.com/fetzerch/grafana-sunandmoon-datasource/issues
-[grafana]: http://grafana.org
+[grafana]: https://grafana.com
 [grafana3]: https://grafana.com/blog/2016/05/11/grafana-3.0-stable-released
-[grafana-ds]: https://grafana.net/plugins/fetzerch-sunandmoon-datasource
-[grafana-db]: https://grafana.net/dashboards/630
-[grafana-net]: https://grafana.net
-[graphite]: http://graphiteapp.org
-[monitorama]: http://monitorama.com
+[grafana-ds]: https://grafana.com/grafana/plugins/fetzerch-sunandmoon-datasource
+[grafana-db]: https://grafana.com/grafana/dashboards/630
+[grafana-net]: https://grafana.com
+[graphite]: https://graphiteapp.org
+[monitorama]: https://monitorama.com
 [raintank]: https://raintank.io
 [suncalc]: https://github.com/mourner/suncalc
 [torkel]: https://twitter.com/torkelo

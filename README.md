@@ -4,7 +4,7 @@
 
 This is my blog.
 
-Design based on [Poole](http://getpoole.com/) by
+Design based on [Poole](https://getpoole.com/) by
 [@mdo](https://twitter.com/mdo).
 
 ## Run locally
