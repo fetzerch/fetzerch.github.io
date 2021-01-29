@@ -5,6 +5,7 @@ stages:
 before_script:
   - export LANG=C.UTF-8
   - gem install bundler
+  - bundle update
   - bundle install --jobs $(nproc) --path=/cache/bundler
 
 verify:
