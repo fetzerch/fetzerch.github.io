@@ -49,10 +49,10 @@ namespace :verify do
     puts ''
   end
 
-  desc 'Spellcheck Markdown documents'
+  desc 'Spellcheck'
   task :spellcheck do |t|
     puts "----- #{t.comment} -----"
-    sh 'bundle exec mdspell _posts *.md --config .mdspell'
+    sh 'bundle exec forspell -c .forspell.dict'
     puts ''
   end
 end

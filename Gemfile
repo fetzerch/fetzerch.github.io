@@ -7,7 +7,7 @@ gem 'rake'
 group :verify do
   gem 'rubocop'
   gem 'mdl'
-  gem 'mdspell'
+  gem 'forspell'
 end
 
 group :test do

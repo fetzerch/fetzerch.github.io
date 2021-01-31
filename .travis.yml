@@ -4,7 +4,8 @@ rvm:
 addons:
   apt:
     packages:
-      - aspell-en
+      - hunspell-en-us
+      - hunspell
 script:
   - bundle exec rake verify
   - bundle exec rake test
