@@ -41,8 +41,8 @@ This dashboard is accessible on [Grafana.net][grafana-db].
 At the time of writing, there were mainly two alternative approaches documented
 that are worth mentioning.
 
-At first, there is a [snippet][fbstatus] available which is based on a Perl
-script. Besides the statistics available over UPnP the example also collects
+At first, there was only a snippet available which is based on a Perl script.
+Besides the statistics available over UPnP the example also collects
 additional data scraped from the router's web interface.
 Unfortunately even the simple version wasn't fast enough in my environment to
 retrieve the data reliably using a 10 second interval.
@@ -53,4 +53,3 @@ parse the results with XPath.
 
 [collectd-exec]: https://collectd.org/wiki/index.php/Plugin:Exec
 [cURL-XML]: https://collectd.org/wiki/index.php/Plugin:cURL-XML/Config#Fritz.21Box_Internet_Router
-[fbstatus]: https://erinnerungsfragmente.de/posts/2014/05/fritzbox-monitoring-mit-collectd
