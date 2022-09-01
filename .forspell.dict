@@ -5,6 +5,7 @@ janbar
 Melexis
 Monitorama
 raintank
+Somfy
 Torkel
 
 # Software and libs
@@ -18,12 +19,15 @@ Gerrit
 Grafana
 grafana
 html-proofer
+kasserver
 Kodi
 Kodi's
 libcmyth
 libsensors
 libtarget
 lm-sensors
+nymea
+Wireshark
 
 # Words
 Biphase
