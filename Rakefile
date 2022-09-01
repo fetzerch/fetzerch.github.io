@@ -68,7 +68,7 @@ namespace :test do
     puts "----- #{t.comment} -----"
     HTMLProofer.check_directory(
       './_site',
-      check_favicon: true, assume_extension: true, disable_external: true
+      checks: %w[Links Images Scripts FavIcon], enforce_https: false, disable_external: true
     ).run
     puts ''
   end
@@ -80,7 +80,7 @@ namespace :test do
        '--baseurl=/directory -d _site_basedir/directory'
     HTMLProofer.check_directory(
       './_site_basedir',
-      check_favicon: true, assume_extension: true, disable_external: true
+      checks: %w[Links Images Scripts FavIcon], enforce_https: false, disable_external: true
     ).run
     puts ''
   end
@@ -104,6 +104,7 @@ task external_links: ['build'] do |t|
   puts "----- #{t.comment} -----"
   HTMLProofer.check_directory('./_site', external_only: true, http_status_ignore: [400],
                                          typhoeus: { timeout: 60 },
-                                         hydra: { max_concurrency: 1 }).run
+                                         hydra: { max_concurrency: 1 },
+                                         enforce_https: false).run
   puts ''
 end

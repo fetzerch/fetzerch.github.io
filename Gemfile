@@ -5,11 +5,11 @@ gem 'jekyll-paginate'
 gem 'rake'
 
 group :verify do
-  gem 'rubocop'
-  gem 'mdl'
   gem 'forspell'
+  gem 'mdl'
+  gem 'rubocop'
 end
 
 group :test do
-  gem 'html-proofer'
+  gem 'html-proofer', '>=4.0'
 end

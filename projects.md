@@ -81,5 +81,5 @@ that simplifies the configuration of Jenkins CI jobs. I've contributed the
 integration for the Valgrind and Clang scan-build publisher plugins that I'm
 using for some of the projects mentioned on this page.
 
-* Jenkins Job Builder: [Gerrit Changes](https://review.openstack.org/#/q/owner:%22Christian+Fetzer%22,n,z) /
+* Jenkins Job Builder: [Gerrit Changes](https://review.opendev.org/q/owner:%22Christian+Fetzer%22) /
   [Commits](https://github.com/openstack-infra/jenkins-job-builder/commits?author=fetzerch)
