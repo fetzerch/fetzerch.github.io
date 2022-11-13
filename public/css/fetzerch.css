@@ -1,4 +1,22 @@
 /* Fonts */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/pt-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/pt-serif-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/pt-serif-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
@@ -8,6 +26,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+}
+
+.pagination {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 /* Head */

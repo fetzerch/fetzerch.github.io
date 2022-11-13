@@ -49,11 +49,8 @@ When submitting the plugin to [Grafana.net][grafana-net] I received very
 positive feedback from [raintank], the company behind Grafana and
 [Torkel Ödegaard][torkel] even demoed the datasource in his talk at this year's
 [Monitorama][monitorama] which happened to take place two days after I
-created the Pull Request on GitHub. Thanks for this!
-
-<iframe width="720" height="400"
-src="https://www.youtube.com/embed/1SlljMU9V5k?start=6748&end=6810"
-frameborder="0" allowfullscreen></iframe>
+created the Pull Request on GitHub. Thanks for this! A recording is available
+on [YouTube](https://www.youtube.com/embed/1SlljMU9V5k?start=6748&end=6810).
 
 ## Outlook and further work
 
