@@ -52,4 +52,4 @@ collectd's [cURL-XML] plugin to call the respective SOAP actions directly and
 parse the results with XPath.
 
 [collectd-exec]: https://collectd.org/wiki/index.php/Plugin:Exec
-[cURL-XML]: https://collectd.org/wiki/index.php/Plugin:cURL-XML/Config#Fritz.21Box_Internet_Router
+[cURL-XML]: https://github.com/collectd/collectd/wiki/Plugin-cURL-XML-Config#fritzbox-internet-router

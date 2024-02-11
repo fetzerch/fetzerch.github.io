@@ -80,4 +80,4 @@ calculation of the mentioned values, please use the
 [monitorama]: https://monitorama.com
 [raintank]: https://raintank.io
 [suncalc]: https://github.com/mourner/suncalc
-[torkel]: https://twitter.com/torkelo
+[torkel]: https://github.com/torkelo
