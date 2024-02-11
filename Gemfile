@@ -5,9 +5,10 @@ gem 'jekyll-paginate'
 gem 'rake'
 
 group :verify do
-  gem 'forspell'
-  gem 'mdl'
-  gem 'rubocop'
+ # No release contains Ruby 3.2 compatibility fixes and dependency updates.
+ gem 'forspell', git: 'https://github.com/kkuprikov/forspell', ref: '6c4004f'
+ gem 'mdl'
+ gem 'rubocop'
 end
 
 group :test do

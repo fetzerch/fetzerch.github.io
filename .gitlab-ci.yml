@@ -10,20 +10,20 @@ before_script:
 
 verify:
   stage: test
-  image: ruby:2.7
+  image: ruby:3.3
   script:
     - apt-get update && apt-get install --no-install-recommends -y hunspell-en-us hunspell
     - bundle exec rake verify
 
 test:
   stage: test
-  image: ruby:2.7
+  image: ruby:3.3
   script:
     - bundle exec rake test
 
 external_links:
   stage: test
-  image: ruby:2.7
+  image: ruby:3.3
   only:
     - schedules
   script:
@@ -32,7 +32,7 @@ external_links:
 
 build:review:
   stage: test
-  image: ruby:2.7
+  image: ruby:3.3
   script:
     - 'sed -i "s*baseurl:*baseurl: /gitlab/reviews/$CI_PROJECT_PATH/$CI_COMMIT_REF_SLUG/public*" _config.yml'
     - bundle exec rake build
